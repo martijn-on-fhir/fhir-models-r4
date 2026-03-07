@@ -1,0 +1,15 @@
+export enum ResearchSubjectStatus {
+  Candidate = 'candidate',
+  Eligible = 'eligible',
+  FollowUp = 'follow-up',
+  Ineligible = 'ineligible',
+  NotRegistered = 'not-registered',
+  OffStudy = 'off-study',
+  OnStudy = 'on-study',
+  OnStudyIntervention = 'on-study-intervention',
+  OnStudyObservation = 'on-study-observation',
+  PendingOnStudy = 'pending-on-study',
+  PotentialCandidate = 'potential-candidate',
+  Screening = 'screening',
+  Withdrawn = 'withdrawn',
+}
