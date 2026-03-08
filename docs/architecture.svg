@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="dtGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="resGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <linearGradient id="enumGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#94a3b8" flood-opacity="0.25"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="720" rx="12" fill="#f8fafc"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="960" height="56" rx="12" fill="url(#headerGrad)"/>
+  <rect x="0" y="20" width="960" height="36" fill="url(#headerGrad)"/>
+  <text x="480" y="36" text-anchor="middle" fill="#fff" font-size="22" font-weight="700" letter-spacing="0.5">fhir-models-r4</text>
+  <text x="480" y="52" text-anchor="middle" fill="#e0e7ff" font-size="11">TypeScript class models for FHIR R4 — runtime validation &amp; transformation</text>
+
+  <!-- ═══════════════════════ INHERITANCE HIERARCHY (left) ═══════════════════════ -->
+  <text x="40" y="90" fill="#475569" font-size="11" font-weight="600" letter-spacing="1.2">INHERITANCE HIERARCHY</text>
+
+  <!-- Element box -->
+  <rect x="40" y="105" width="200" height="54" rx="8" fill="url(#baseGrad)" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="127" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="700">Element</text>
+  <text x="140" y="147" text-anchor="middle" fill="#64748b" font-size="10">id, extension[]</text>
+
+  <!-- Arrow Element -> BackboneElement -->
+  <line x1="140" y1="159" x2="140" y2="175" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- BackboneElement box -->
+  <rect x="40" y="180" width="200" height="54" rx="8" fill="url(#baseGrad)" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="202" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="700">BackboneElement</text>
+  <text x="140" y="222" text-anchor="middle" fill="#64748b" font-size="10">modifierExtension[]</text>
+
+  <!-- Resource box -->
+  <rect x="290" y="105" width="200" height="54" rx="8" fill="url(#baseGrad)" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="390" y="127" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="700">Resource</text>
+  <text x="390" y="147" text-anchor="middle" fill="#64748b" font-size="10">id, meta, resourceType, language</text>
+
+  <!-- Arrow Resource -> DomainResource -->
+  <line x1="390" y1="159" x2="390" y2="175" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- DomainResource box -->
+  <rect x="290" y="180" width="200" height="54" rx="8" fill="url(#baseGrad)" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="390" y="202" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="700">DomainResource</text>
+  <text x="390" y="222" text-anchor="middle" fill="#64748b" font-size="10">text, contained[], extension[]</text>
+
+  <!-- base/ label -->
+  <rect x="40" y="246" width="450" height="20" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="265" y="260" text-anchor="middle" fill="#94a3b8" font-size="10">src/models/base/</text>
+
+  <!-- ═══════════════════════ DATA TYPES (left-center) ═══════════════════════ -->
+  <text x="40" y="296" fill="#475569" font-size="11" font-weight="600" letter-spacing="1.2">DATA TYPES</text>
+  <text x="202" y="296" fill="#16a34a" font-size="11" font-weight="700">37 classes</text>
+
+  <rect x="40" y="308" width="440" height="130" rx="10" fill="url(#dtGrad)" stroke="#22c55e" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Datatypes grid -->
+  <text x="60" y="332" fill="#15803d" font-size="12" font-weight="600">HumanName</text>
+  <text x="60" y="352" fill="#15803d" font-size="12" font-weight="600">Address</text>
+  <text x="60" y="372" fill="#15803d" font-size="12" font-weight="600">ContactPoint</text>
+  <text x="60" y="392" fill="#15803d" font-size="12" font-weight="600">Identifier</text>
+  <text x="60" y="412" fill="#15803d" font-size="12" font-weight="600">Coding</text>
+
+  <text x="185" y="332" fill="#15803d" font-size="12" font-weight="600">CodeableConcept</text>
+  <text x="185" y="352" fill="#15803d" font-size="12" font-weight="600">Quantity</text>
+  <text x="185" y="372" fill="#15803d" font-size="12" font-weight="600">Period</text>
+  <text x="185" y="392" fill="#15803d" font-size="12" font-weight="600">Reference</text>
+  <text x="185" y="412" fill="#15803d" font-size="12" font-weight="600">Timing</text>
+
+  <text x="330" y="332" fill="#15803d" font-size="12" font-weight="600">Dosage</text>
+  <text x="330" y="352" fill="#15803d" font-size="12" font-weight="600">Money</text>
+  <text x="330" y="372" fill="#15803d" font-size="12" font-weight="600">Narrative</text>
+  <text x="330" y="392" fill="#15803d" font-size="12" font-weight="600">Attachment</text>
+  <text x="330" y="412" fill="#16a34a" font-size="11" font-style="italic">+ 22 more ...</text>
+
+  <!-- extends label from Element to datatypes -->
+  <path d="M 80 234 L 80 308" fill="none" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrowBlue)"/>
+  <text x="62" y="280" fill="#3b82f6" font-size="9" font-style="italic">extends</text>
+
+  <!-- ═══════════════════════ RESOURCES (bottom-left) ═══════════════════════ -->
+  <text x="40" y="468" fill="#475569" font-size="11" font-weight="600" letter-spacing="1.2">RESOURCES</text>
+  <text x="152" y="468" fill="#7c3aed" font-size="11" font-weight="700">146 classes</text>
+
+  <rect x="40" y="480" width="440" height="130" rx="10" fill="url(#resGrad)" stroke="#a855f7" stroke-width="1" filter="url(#shadow)"/>
+
+  <text x="60" y="504" fill="#6b21a8" font-size="12" font-weight="600">Patient</text>
+  <text x="60" y="524" fill="#6b21a8" font-size="12" font-weight="600">Observation</text>
+  <text x="60" y="544" fill="#6b21a8" font-size="12" font-weight="600">Encounter</text>
+  <text x="60" y="564" fill="#6b21a8" font-size="12" font-weight="600">Condition</text>
+  <text x="60" y="584" fill="#6b21a8" font-size="12" font-weight="600">Procedure</text>
+
+  <text x="185" y="504" fill="#6b21a8" font-size="12" font-weight="600">Bundle</text>
+  <text x="185" y="524" fill="#6b21a8" font-size="12" font-weight="600">MedicationRequest</text>
+  <text x="185" y="544" fill="#6b21a8" font-size="12" font-weight="600">DiagnosticReport</text>
+  <text x="185" y="564" fill="#6b21a8" font-size="12" font-weight="600">Organization</text>
+  <text x="185" y="584" fill="#6b21a8" font-size="12" font-weight="600">Practitioner</text>
+
+  <text x="350" y="504" fill="#6b21a8" font-size="12" font-weight="600">AllergyIntolerance</text>
+  <text x="350" y="524" fill="#6b21a8" font-size="12" font-weight="600">Immunization</text>
+  <text x="350" y="544" fill="#6b21a8" font-size="12" font-weight="600">CarePlan</text>
+  <text x="350" y="564" fill="#6b21a8" font-size="12" font-weight="600">Claim</text>
+  <text x="350" y="584" fill="#7c3aed" font-size="11" font-style="italic">+ 131 more ...</text>
+
+  <!-- extends label from DomainResource to resources -->
+  <path d="M 330 234 L 330 480" fill="none" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrowBlue)"/>
+  <text x="312" y="460" fill="#3b82f6" font-size="9" font-style="italic">extends</text>
+
+  <!-- ═══════════════════════ ENUMS (right side) ═══════════════════════ -->
+  <text x="520" y="90" fill="#475569" font-size="11" font-weight="600" letter-spacing="1.2">VALUE SET ENUMS</text>
+  <text x="680" y="90" fill="#d97706" font-size="11" font-weight="700">140 enums</text>
+
+  <rect x="520" y="105" width="400" height="200" rx="10" fill="url(#enumGrad)" stroke="#f59e0b" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Enum columns -->
+  <text x="540" y="132" fill="#92400e" font-size="12" font-weight="600">AdministrativeGender</text>
+  <text x="540" y="152" fill="#92400e" font-size="12" font-weight="600">ObservationStatus</text>
+  <text x="540" y="172" fill="#92400e" font-size="12" font-weight="600">BundleType</text>
+  <text x="540" y="192" fill="#92400e" font-size="12" font-weight="600">EncounterStatus</text>
+  <text x="540" y="212" fill="#92400e" font-size="12" font-weight="600">NarrativeStatus</text>
+  <text x="540" y="232" fill="#92400e" font-size="12" font-weight="600">IssueSeverity</text>
+  <text x="540" y="252" fill="#92400e" font-size="12" font-weight="600">ContactPointSystem</text>
+  <text x="540" y="272" fill="#92400e" font-size="12" font-weight="600">AddressUse</text>
+
+  <text x="720" y="132" fill="#92400e" font-size="12" font-weight="600">RequestStatus</text>
+  <text x="720" y="152" fill="#92400e" font-size="12" font-weight="600">MedicationRequestStatus</text>
+  <text x="720" y="172" fill="#92400e" font-size="12" font-weight="600">DiagnosticReportStatus</text>
+  <text x="720" y="192" fill="#92400e" font-size="12" font-weight="600">CarePlanStatus</text>
+  <text x="720" y="212" fill="#92400e" font-size="12" font-weight="600">GoalLifecycleStatus</text>
+  <text x="720" y="232" fill="#92400e" font-size="12" font-weight="600">ConsentState</text>
+  <text x="720" y="252" fill="#92400e" font-size="12" font-weight="600">LinkType</text>
+  <text x="720" y="272" fill="#d97706" font-size="11" font-style="italic">+ 125 more ...</text>
+
+  <!-- ═══════════════════════ KEY FEATURES (right side, middle) ═══════════════════════ -->
+  <text x="520" y="340" fill="#475569" font-size="11" font-weight="600" letter-spacing="1.2">KEY FEATURES</text>
+
+  <rect x="520" y="355" width="400" height="135" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Feature items -->
+  <circle cx="545" cy="381" r="5" fill="#3b82f6"/>
+  <text x="560" y="385" fill="#334155" font-size="12">Instantiable classes (not just interfaces)</text>
+
+  <circle cx="545" cy="405" r="5" fill="#22c55e"/>
+  <text x="560" y="409" fill="#334155" font-size="12">@Type() decorators for auto deserialization</text>
+
+  <circle cx="545" cy="429" r="5" fill="#f59e0b"/>
+  <text x="560" y="433" fill="#334155" font-size="12">@IsOptional / @ValidateNested validation</text>
+
+  <circle cx="545" cy="453" r="5" fill="#a855f7"/>
+  <text x="560" y="457" fill="#334155" font-size="12">toPlainObject() / serialize() helpers</text>
+
+  <circle cx="545" cy="477" r="5" fill="#ef4444"/>
+  <text x="560" y="481" fill="#334155" font-size="12">Fluent add*() methods for array properties</text>
+
+  <!-- ═══════════════════════ DEPENDENCIES (bottom right) ═══════════════════════ -->
+  <text x="520" y="525" fill="#475569" font-size="11" font-weight="600" letter-spacing="1.2">RUNTIME DEPENDENCIES</text>
+
+  <!-- Dep boxes -->
+  <rect x="520" y="540" width="125" height="46" rx="8" fill="#fff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="582" y="560" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="600">class-transformer</text>
+  <text x="582" y="576" text-anchor="middle" fill="#94a3b8" font-size="10">plainToInstance</text>
+
+  <rect x="657" y="540" width="125" height="46" rx="8" fill="#fff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="719" y="560" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="600">class-validator</text>
+  <text x="719" y="576" text-anchor="middle" fill="#94a3b8" font-size="10">validate()</text>
+
+  <rect x="795" y="540" width="125" height="46" rx="8" fill="#fff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="857" y="560" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="600">reflect-metadata</text>
+  <text x="857" y="576" text-anchor="middle" fill="#94a3b8" font-size="10">decorator support</text>
+
+  <!-- ═══════════════════════ USAGE FLOW (bottom) ═══════════════════════ -->
+  <text x="40" y="640" fill="#475569" font-size="11" font-weight="600" letter-spacing="1.2">USAGE FLOW</text>
+
+  <!-- Step 1 -->
+  <rect x="40" y="655" width="175" height="46" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="127" y="673" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="700">1</text>
+  <text x="127" y="691" text-anchor="middle" fill="#1e293b" font-size="12">FHIR JSON input</text>
+
+  <!-- Arrow -->
+  <line x1="215" y1="678" x2="250" y2="678" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="255" y="655" width="175" height="46" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="342" y="673" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="700">2</text>
+  <text x="342" y="691" text-anchor="middle" fill="#1e293b" font-size="12">plainToInstance()</text>
+
+  <!-- Arrow -->
+  <line x1="430" y1="678" x2="465" y2="678" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="470" y="655" width="175" height="46" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="557" y="673" text-anchor="middle" fill="#d97706" font-size="10" font-weight="700">3</text>
+  <text x="557" y="691" text-anchor="middle" fill="#1e293b" font-size="12">validate(instance)</text>
+
+  <!-- Arrow -->
+  <line x1="645" y1="678" x2="680" y2="678" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="685" y="655" width="235" height="46" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="802" y="673" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="700">4</text>
+  <text x="802" y="691" text-anchor="middle" fill="#1e293b" font-size="12">Typed, validated FHIR object</text>
+</svg>
