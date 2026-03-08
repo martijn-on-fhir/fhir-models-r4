@@ -18,6 +18,9 @@
   "author": "",
   "license": "ISC",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "bugs": {
     "url": "https://github.com/martijn-on-fhir/fhir-models-r4/issues"
   },
