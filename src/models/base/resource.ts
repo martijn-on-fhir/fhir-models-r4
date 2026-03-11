@@ -2,6 +2,7 @@
 import {ClassTransformer, instanceToPlain, Type} from 'class-transformer';
 import { IsOptional, IsString, ValidateNested } from 'class-validator';
 import { Meta } from '../datatypes/meta.js';
+import {Coding} from '../datatypes/index.js'
 
 export interface IResource {
   resourceType?: string;
@@ -56,7 +57,12 @@ export class Resource implements IResource{
 
       this.meta = new Meta({
         profile: [],
-        lastUpdated: new Date().toISOString()
+        lastUpdated: new Date().toISOString(),
+        security: [new Coding({
+          system: 'http://terminology.hl7.org/CodeSystem/v3-Confidentiality',
+          code: 'N',
+          display: 'normal'
+        })],
       });
     }
   }
